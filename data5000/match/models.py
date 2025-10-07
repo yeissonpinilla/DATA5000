@@ -15,3 +15,5 @@ class Match(models.Model):
     visiting_score = models.IntegerField()
     match_status = models.TextField(max_length=20)
     
+    def __str__(self):
+        return f"Match {self.match_id} in {self.country_name}: {self.home_score} VS {self.visiting_score}"
