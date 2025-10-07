@@ -10,9 +10,10 @@ Repository for DATA 5000 final course project at Carleton University
    - Run command "python3 -m venv venv" this is going to create a virtual environment with name venv
    - Activate your venv (using Mac "source venv/bin/activate", using Windows CMD "venv\Scripts\activate.bat")
    - You should see now a sign on your cmd indicating you are using venv
-3. On your venv, run command to install dependencies: ```pip install -r requirements.txt```
-4. Now, move to the nested DATA5000 folder
-5. You will need to apply DB changes by using "python manage.py migrate", everything should show "OK"
+3. On your venv, run command to install dependencies:
+4. ```pip install -r requirements.txt```
+5. Now, move to the nested DATA5000 folder
+6. You will need to apply DB changes by using "python manage.py migrate", everything should show "OK"
 10. Download ANY .json file from match folder from statsbomb repository
 11. Create your own superuser "python manage.py createsuperuser" and follow instructions on your terminal
 12. Run following command to bring .json data into our Django project "python manage.py import_json {your_path_to_json_file}" NOTE: Put your path until the folder containing your json file, not until your actual json file.
